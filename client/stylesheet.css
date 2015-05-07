@@ -14,22 +14,8 @@ body {
 	background-image: url(../images/backgroundimage.png);
 }
 
-a#pdf { 
-	display: block; 
-	float: right; 
-	background: #222; 
-	color: white; 
-	padding: 6px 50px 6px 12px; 
-	margin-bottom: 6px; 
-	text-decoration: none;  
-}
-
-a#pdf:hover { 
-	background: #666; 
-}
-
-#container {
-	padding: 10px 120px 10px 120px;
+.btn-success {
+	float: right;
 }
 
 h1 {
@@ -62,13 +48,13 @@ h4 {
 	font-size: 24px;
 }
 
-#footer { 
-	padding: 1em 0 5em 0; 
-	font-size: 92%;  
+.footer {
+	padding: 1em 0 5em 0;
+	font-size: 92%;
 	text-align: center;
 }
 
-#footer p {
-	margin-bottom: 0; 
+.footer p {
+	margin-bottom: 0;
 	text-align: center;
 }

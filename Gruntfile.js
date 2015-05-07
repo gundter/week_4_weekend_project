@@ -27,7 +27,7 @@ module.exports = function (grunt){
                 expand: true,
                 cwd: "client/",
                 src: "stylesheet.css",
-                "dest": "server/assets/styles/"
+                "dest": "server/public/assets/styles/"
             }
         }
     });
