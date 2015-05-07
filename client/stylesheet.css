@@ -7,6 +7,15 @@
 	scr: url(./fonts/Prototype.ttf) format(ttf);
 }
 
+.jumbotron{
+	background-color: inherit;
+}
+
+.btn-default {
+	background-color: #555555;
+	color: #ffffff;
+}
+
 body {
 	font-family: "Prototype", Arial, Sans-serif;
 	font-size: 20px;
