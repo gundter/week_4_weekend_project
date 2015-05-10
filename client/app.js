@@ -1,4 +1,4 @@
-var templateHTML;
+var templateHTML, contactData;
 
 function getContent (){
     console.log("Entering getContent function");
@@ -8,7 +8,8 @@ function getContent (){
         dataType: 'json',
         success: function(response){
             console.log("getContent success ", response);
-            appendData(response);
+            contactData = response;
+            appendData();
         },
         error: function (xhr, status) {
             alert('Error: ' + status);
@@ -19,16 +20,16 @@ function getContent (){
     });
 }
 
-function appendData (data){
-    console.log("This ran ", data);
+function appendData (){
+    console.log("This ran ", contactData);
     console.log("Template", templateHTML);
     var el = $('#contact');
     el.append(templateHTML);
-    el.children().children('#title').append(data.info.title);
-    el.children().children('#phone').append(data.info.phone);
-    el.children().children('#address').append(data.info.address);
-    el.children().find('#email').append(data.info.email);
-    el.children().children('#summary').append(data.info.summary);
+    el.children().children('#title').append(contactData.info.title);
+    el.children().children('#phone').append(contactData.info.phone);
+    el.children().children('#address').append(contactData.info.address);
+    el.children().find('#email').append(contactData.info.email);
+    el.children().children('#summary').append(contactData.info.summary);
 }
 
 $(document).ready(function(){
