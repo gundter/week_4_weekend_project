@@ -5,6 +5,14 @@ var path = require('path');
 
 app.set('port', (process.env.PORT || 5000));
 
+app.get('/template', function(request, response){
+   response.sendFile(path.join(__dirname, './public/views/templates/contactinfo.html'));
+});
+
+app.get('/data', function(request, response){
+   response.sendFile(path.join(__dirname, './public/assets/data/contact.json'));
+});
+
 app.get('/*', function( request, response){
    var file = request.params[0] || "views/index.html";
 
