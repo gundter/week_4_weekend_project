@@ -7,69 +7,44 @@
 	scr: url(./fonts/Prototype.ttf) format(ttf);
 }
 
-.thumbnail {
-	background-color: inherit;
-}
-
 .well {
-	background-color: inherit;
+	background-color: #9FBCBF;
 }
 
 .jumbotron{
-	background-color: inherit;
+	background-color: #647678;
 }
 
 .btn-default {
-	background-color: #555555;
-	color: #ffffff;
+	background-color: #59D8E5;
 }
 
 body {
 	font-family: "Prototype", Arial, Sans-serif;
-	font-size: 20px;
-	background-image: url(../images/backgroundimage.png);
-}
-
-.btn-success {
-	float: right;
+	background-color: #D5FBFF;
+	color: #2F3738;
 }
 
 h1 {
 	font-family: "Coalition", Arial, Sans-serif;
-	font-size: 48px;
 	border-bottom: 7px solid #000000;
 }
 
 h2 {
 	font-family: "Coalition", Arial, Sans-serif;
-	font-size: 48px;
 }
 
 h3 {
 	font-family: "Coalition", Arial, Sans-serif;
-	font-size: 36px;
 }
 
 h4 {
 	font-family: "Coalition", Arial, Sans-serif;
-	font-size: 24px;
 }
 
 .date {
 	float: right;
 	font-family: "Coalition", Arial, Sans-serif;
-	font-size: 24px;
-}
-
-.footer {
-	padding: 1em 0 5em 0;
-	font-size: 92%;
-	text-align: center;
-}
-
-.footer p {
-	margin-bottom: 0;
-	text-align: center;
 }
 
 img {

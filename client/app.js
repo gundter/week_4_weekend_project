@@ -24,7 +24,7 @@ function appendData (){
     console.log("This ran ", contactData);
     console.log("Template", templateHTML);
     var el = $('#contact');
-    el.append(templateHTML);
+    el.prepend(templateHTML);
     el.children().children('#title').append(contactData.info.title);
     el.children().children('#phone').append(contactData.info.phone);
     el.children().children('#address').append(contactData.info.address);
